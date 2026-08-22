@@ -9,7 +9,7 @@ export const groups = [
     phrase: null,
     productoBase: 'Arequipe',
     products: [
-      { name: 'Alfajores', price: 2000 },
+      { name: 'Alfajores', price: 0 },
       { name: 'Obleas', price: 0 },
       { name: 'Barquillos', price: 0 },
       { name: 'Bolis de arequipe', price: 0 },
