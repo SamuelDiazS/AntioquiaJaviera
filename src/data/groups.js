@@ -7,10 +7,6 @@ export const groups = [
     id: '11.1',
     baseName: 'De chiva por Oriente',
     phrase: null,
-    veedorLabel: 'Veedor',
-    veedor: 'Salome Pemberthy',
-    silleteroLabel: 'Silletero',
-    silletero: 'Kevin Atehortua',
     productoBase: 'Arequipe',
     products: [
       { name: 'Alfajores', price: 0 },
@@ -28,10 +24,6 @@ export const groups = [
     id: '11.2',
     baseName: 'Entre café y montañas',
     phrase: null,
-    veedorLabel: 'Veedor',
-    veedor: 'Catalina Carmona Espinosa',
-    silleteroLabel: 'Silletero',
-    silletero: 'Miguel Ángel Montoya Pulgarin',
     productoBase: 'CAFÉ',
     products: [
       { name: 'Granizado de Café', price: 0 },
@@ -58,10 +50,6 @@ export const groups = [
     id: '11.3',
     baseName: 'El rincón platanero',
     phrase: 'Un pedacito de sol: entre plátanos y sabor',
-    veedorLabel: 'Veedor',
-    veedor: 'Katherine Alarcón Velez',
-    silleteroLabel: 'Silletera',
-    silletero: 'Elizabeth Duarte Giraldo',
     productoBase: 'Plátano',
     products: [
       { name: 'Maduro con una proteína y diferentes toppings', price: 0 },
@@ -82,10 +70,6 @@ export const groups = [
     id: '11.4',
     baseName: 'Ruta láctea: todo un universo por el Norte de Antioquia.',
     phrase: null,
-    veedorLabel: 'Veedor',
-    veedor: 'Yulay Isabella Piedrahíta Ramírez',
-    silleteroLabel: 'Silletero',
-    silletero: 'Sebastián Ossa Pérez',
     productoBase: 'Fresa',
     products: [
       { name: 'Fresas con crema', price: 0 },
@@ -103,10 +87,6 @@ export const groups = [
     id: '11.5',
     baseName: 'El balcón de los diablitos',
     phrase: 'De manguito en manguito sabe más rico.',
-    veedorLabel: 'Veedor',
-    veedor: 'Hanna Osorio Zapata',
-    silleteroLabel: 'Silletero',
-    silletero: 'Simon Cifuentes Jiménez',
     productoBase: 'Mango',
     products: [
       {
@@ -137,10 +117,6 @@ export const groups = [
     id: '11.6',
     baseName: 'Rugido antioqueño: entre montañas, mitos y oro.',
     phrase: null,
-    veedorLabel: 'Veedor',
-    veedor: 'Forlán Cristiano Marín Milanés',
-    silleteroLabel: 'Silletero',
-    silletero: 'Samuel Alzate Largo',
     productoBase: null,
     products: [
       { name: 'Arepas de chocolo con queso', price: 0 },

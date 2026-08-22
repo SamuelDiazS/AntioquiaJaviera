@@ -50,12 +50,6 @@ export default function GroupModal({ group, onClose }) {
         )}
 
         <div className="grid sm:grid-cols-2 gap-2 mt-4 text-sm text-verde-oscuro/80">
-          <p>
-            <span className="font-semibold">{group.veedorLabel}:</span> {group.veedor}
-          </p>
-          <p>
-            <span className="font-semibold">{group.silleteroLabel}:</span> {group.silletero}
-          </p>
           {group.productoBase && (
             <p className="sm:col-span-2">
               <span className="font-semibold">Producto base:</span> {group.productoBase}

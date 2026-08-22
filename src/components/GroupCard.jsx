@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Expand, User, Sparkles } from 'lucide-react'
+import { Expand, Sparkles } from 'lucide-react'
 import useReveal from '../hooks/useReveal.js'
 import SilletaFrame from './SilletaFrame.jsx'
 import ProductList from './ProductList.jsx'
@@ -48,14 +48,6 @@ export default function GroupCard({ group, index }) {
         )}
 
         <div className="mt-2 mb-4 text-sm text-verde-oscuro/75 space-y-0.5">
-          <p className="flex items-center gap-1.5">
-            <User className="w-3.5 h-3.5 text-verde-oliva" aria-hidden="true" />
-            <span className="font-semibold">{group.veedorLabel}:</span> {group.veedor}
-          </p>
-          <p className="flex items-center gap-1.5">
-            <User className="w-3.5 h-3.5 text-verde-oliva" aria-hidden="true" />
-            <span className="font-semibold">{group.silleteroLabel}:</span> {group.silletero}
-          </p>
           {group.productoBase && (
             <p className="flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-dorado-2" aria-hidden="true" />

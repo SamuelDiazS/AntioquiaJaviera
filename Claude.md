@@ -550,8 +550,6 @@ Crea una estructura de datos centralizada para:
 
 * grupos
 * nombres de bases
-* veedores
-* silleteros
 * productos
 * toppings
 * precios
@@ -563,8 +561,6 @@ groups = [
 {
 id: "11.1",
 baseName: "...",
-veedor: "...",
-silletero: "...",
 silletaImage: "/images/silletas/11-1.jpg",
 products: [
 {
@@ -586,7 +582,6 @@ Aunque inicialmente no es obligatorio implementar un backend, deja la arquitectu
 * Eliminar productos.
 * Editar toppings.
 * Cambiar nombres.
-* Cambiar información de veedores y silleteros.
 * Subir imágenes de las silletas.
 * Modificar la tabla de rotaciones.
 
