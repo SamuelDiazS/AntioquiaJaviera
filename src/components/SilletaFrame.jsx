@@ -1,27 +1,12 @@
-import { useRef, useState } from 'react'
-import { ImageUp, Maximize2, X, Flower2, Trash2 } from 'lucide-react'
-import { useAdmin } from '../context/AdminContext.jsx'
+import { useState } from 'react'
+import { Maximize2, X, Flower2 } from 'lucide-react'
 
 export default function SilletaFrame({ groupId, defaultSrc, groupLabel }) {
-  const { adminMode, getImage, setImage, clearImage } = useAdmin()
   const [errored, setErrored] = useState(false)
   const [lightbox, setLightbox] = useState(false)
-  const inputRef = useRef(null)
 
-  const src = getImage(groupId, defaultSrc)
-  const hasCustomImage = src !== defaultSrc
-  const showPlaceholder = errored && !hasCustomImage
-
-  function handleFile(e) {
-    const file = e.target.files?.[0]
-    if (!file) return
-    const reader = new FileReader()
-    reader.onload = () => {
-      setImage(groupId, reader.result)
-      setErrored(false)
-    }
-    reader.readAsDataURL(file)
-  }
+  const src = defaultSrc
+  const showPlaceholder = errored
 
   return (
     <div className="relative">
@@ -55,40 +40,6 @@ export default function SilletaFrame({ groupId, defaultSrc, groupLabel }) {
           </button>
         )}
       </div>
-
-      {adminMode && (
-        <div className="mt-2 flex items-center gap-2 flex-wrap">
-          <button
-            type="button"
-            onClick={() => inputRef.current?.click()}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold bg-verde-oscuro text-crema px-3 py-1.5 rounded-full hover:bg-verde-bosque"
-          >
-            <ImageUp className="w-3.5 h-3.5" /> Cambiar imagen
-          </button>
-          {hasCustomImage && (
-            <button
-              type="button"
-              onClick={() => {
-                clearImage(groupId)
-                setErrored(false)
-              }}
-              className="inline-flex items-center gap-1.5 text-xs font-semibold bg-terracota/90 text-crema px-3 py-1.5 rounded-full hover:bg-terracota"
-            >
-              <Trash2 className="w-3.5 h-3.5" /> Quitar
-            </button>
-          )}
-          <input
-            ref={inputRef}
-            type="file"
-            accept="image/*"
-            className="hidden"
-            onChange={handleFile}
-          />
-          <p className="w-full text-[11px] text-verde-oscuro/60">
-            Ruta actual: <code>{defaultSrc}</code> · guardado solo en este navegador
-          </p>
-        </div>
-      )}
 
       {lightbox && !showPlaceholder && (
         <div

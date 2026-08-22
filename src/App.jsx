@@ -6,7 +6,6 @@ import RotationSection from './components/RotationSection.jsx'
 import TimelineSection from './components/TimelineSection.jsx'
 import InfoSection from './components/InfoSection.jsx'
 import Footer from './components/Footer.jsx'
-import AdminToggle from './components/AdminToggle.jsx'
 
 export default function App() {
   return (
@@ -21,7 +20,6 @@ export default function App() {
         <InfoSection />
       </main>
       <Footer />
-      <AdminToggle />
     </div>
   )
 }
