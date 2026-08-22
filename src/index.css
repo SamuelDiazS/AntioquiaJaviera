@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #f6f0dc;
+  color: #1f3d2a;
+  font-family: 'Work Sans', ui-sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Textura de papel artesanal muy sutil */
+.textura-papel {
+  position: relative;
+  background-image:
+    radial-gradient(circle at 15% 25%, rgba(31, 61, 42, 0.05) 0, transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(178, 58, 46, 0.04) 0, transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(119, 128, 60, 0.06) 0, transparent 50%);
+}
+
+.textura-papel-oscura {
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(255, 255, 255, 0.04) 0, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.03) 0, transparent 45%);
+}
+
+/* Borde artesanal ligeramente irregular */
+.borde-organico {
+  border-radius: 30px 10px 30px 10px;
+}
+.borde-organico-2 {
+  border-radius: 10px 30px 10px 30px;
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #efe6c9;
+}
+::-webkit-scrollbar-thumb {
+  background: #a9924f;
+  border-radius: 999px;
+}
+
+/* Foco visible accesible */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #e3a63c;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Animación de aparición al hacer scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+.reveal.reveal-visible {
+  animation: fadeUpGlobal 0.7s ease-out forwards;
+}
+@keyframes fadeUpGlobal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Divisor floral */
+.divisor-floral {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.marca-agua-texto {
+  -webkit-text-stroke: 1px rgba(31, 61, 42, 0.12);
+  color: transparent;
+}
