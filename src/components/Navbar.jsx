@@ -73,7 +73,7 @@ export default function Navbar() {
 
       {/* Menú móvil */}
       <div
-        className={`md:hidden fixed inset-x-0 top-[60px] bottom-0 bg-verde-oscuro textura-papel-oscura transition-transform duration-300 ease-out ${
+        className={`md:hidden fixed top-[60px] right-0 bottom-0 w-[min(22rem,88vw)] bg-verde-oscuro textura-papel-oscura border-l border-crema/10 shadow-2xl transition-transform duration-300 ease-out ${
           open ? 'translate-x-0' : 'translate-x-full pointer-events-none'
         }`}
       >
