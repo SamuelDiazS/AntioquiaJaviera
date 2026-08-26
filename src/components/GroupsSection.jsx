@@ -18,10 +18,6 @@ export default function GroupsSection() {
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-verde-oscuro mt-1">
             Bases y Grupos de Grado 11
           </h2>
-          <p className="text-verde-oscuro/70 max-w-2xl mx-auto mt-3">
-            Cada grupo prepara su propia base con un producto insignia, una silleta y un equipo a
-            cargo. Explora sus productos y precios (editables por los organizadores).
-          </p>
         </div>
 
         <DivisorFloral className="mb-10" />
