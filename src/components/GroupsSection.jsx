@@ -14,7 +14,7 @@ export default function GroupsSection() {
     <section id="bases" className="bg-crema textura-papel py-20 sm:py-28 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <div ref={titleRef} className="reveal text-center mb-4">
-          <p className="font-script text-2xl text-terracota">Once bases, once historias</p>
+          <p className="font-script text-2xl text-terracota">Vive a Antioquia en la Javiera</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-verde-oscuro mt-1">
             Bases y Grupos de Grado 11
           </h2>
