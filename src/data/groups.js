@@ -26,8 +26,8 @@ export const groups = [
     phrase: null,
     productoBase: 'CAFÉ',
     products: [
-      { name: 'Granizado de Café con salsa y un topping', price: 8500 },
-      { name: 'Helado de Capuccino con una salsa', price: 5500 },
+      { name: 'Granizado de Café con salsa y un topping', price: 8000 },
+      { name: 'Helado de Capuccino con una salsa', price: 5000 },
     ],
     toppings: [
       { name: 'Chispitas de Colores', price: 1500 },
@@ -52,7 +52,7 @@ export const groups = [
       { name: 'Platanitos (se le puede añadir toppings)', price: 2500 },
     ],
     toppings: [
-      { name: 'Queso', price: 1000 },
+      { name: 'Queso', price: 1200 },
       { name: 'Guacamole', price: 600 },
       { name: 'Pollo y carne', price: 3000 },
     ],
