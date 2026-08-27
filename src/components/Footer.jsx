@@ -18,6 +18,9 @@ export default function Footer() {
       <p className="font-script text-xl sm:text-2xl text-crema/80 mt-3">
         "Antioquia te abraza y contigo florece."
       </p>
+      <p className="text-crema/60 text-xs tracking-wide mt-6">
+        Hecho por Samuel Díaz Sánchez 11-3
+      </p>
     </footer>
   )
 }
