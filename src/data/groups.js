@@ -44,7 +44,7 @@ export const groups = [
   },
   {
     id: '11.3',
-    baseName: 'El rincón platanero',
+    baseName: 'En un mar de oportunidades un mundo de platanales',
     phrase: 'Un pedacito de sol: entre plátanos y sabor',
     productoBase: 'Plátano',
     products: [
