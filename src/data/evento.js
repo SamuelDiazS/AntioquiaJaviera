@@ -2,7 +2,7 @@
 // Modifica estos valores para actualizar los datos en todo el sitio.
 
 export const evento = {
-  institucion: 'Institución Educativa Javier Londoño',
+  institucion: 'Institución Educativa Javiera Londoño',
   nombre: 'Día de la Antioqueñidad',
   fecha: '28 de agosto de 2026',
   lugar: 'Sede Principal',

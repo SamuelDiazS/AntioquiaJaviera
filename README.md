@@ -1,4 +1,4 @@
-# Día de la Antioqueñidad — I.E. Javier Londoño
+# Día de la Antioqueñidad — I.E. Javiera Londoño
 
 Sitio web responsive para gestionar y presentar el evento "Día de la Antioqueñidad":
 bases/grupos, productos y precios, silletas, tabla de rotaciones y desarrollo de la jornada.
